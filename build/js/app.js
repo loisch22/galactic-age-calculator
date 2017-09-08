@@ -66,10 +66,10 @@ var Age = exports.Age = function () {
 
       if (mercuryAge >= avgDeathAge) {
         var yearsAbove = mercuryAge - avgDeathAge;
-        return yearsAbove;
+        return "You lived beyond the average age by: " + yearsAbove + " years";
       } else {
         var yearsBelow = avgDeathAge - mercuryAge;
-        return yearsBelow;
+        return "Years you have left: " + yearsBelow;
       }
     }
   }, {
@@ -82,10 +82,10 @@ var Age = exports.Age = function () {
 
       if (venusAge >= avgDeathAge) {
         var yearsAbove = venusAge - avgDeathAge;
-        return yearsAbove;
+        return "You lived beyond the average age by: " + yearsAbove + " years";
       } else {
         var yearsBelow = avgDeathAge - venusAge;
-        return yearsBelow;
+        return "Years you have left: " + yearsBelow;
       }
     }
   }, {
@@ -98,10 +98,10 @@ var Age = exports.Age = function () {
 
       if (marsAge >= avgDeathAge) {
         var yearsAbove = marsAge - avgDeathAge;
-        return yearsAbove;
+        return "You lived beyond the average age by: " + yearsAbove + " years";
       } else {
         var yearsBelow = avgDeathAge - marsAge;
-        return yearsBelow;
+        return "Years you have left: " + yearsBelow;
       }
     }
   }, {
@@ -114,10 +114,10 @@ var Age = exports.Age = function () {
 
       if (jupiterAge >= avgDeathAge) {
         var yearsAbove = jupiterAge - avgDeathAge;
-        return yearsAbove;
+        return "You lived beyond the average age by: " + yearsAbove + " years";
       } else {
         var yearsBelow = avgDeathAge - jupiterAge;
-        return yearsBelow;
+        return "Years you have left: " + yearsBelow;
       }
     }
   }]);
@@ -226,6 +226,8 @@ $(function () {
     var mercuryAge = ageInput.mercury();
 
     $('#mercury-age').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + "<strong>" + " Mercury years: " + "</strong>" + mercuryAge + "</p>");
+    $('.show-clear-mercury-age').show();
+    $('.show-death-button').show();
   });
   $('#venus').click(function (event) {
     event.preventDefault();
@@ -250,6 +252,47 @@ $(function () {
     var jupiterAge = ageInput.jupiter();
 
     $('#jupiter-age').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + "<strong>" + " Jupiter years: " + "</strong>" + jupiterAge + "</p>");
+  });
+  $('#mercury-death-avg').click(function (event) {
+    event.preventDefault();
+    var age = parseInt($('#age').val());
+    var ageInput = new _age.Age(age);
+    var result = ageInput.yearsLeftMercury();
+
+    $('.mercury-death-result').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + result + "</p>");
+    $('.show-death-results-mercury').show();
+  });
+  $('#venus-death-avg').click(function (event) {
+    event.preventDefault();
+    var age = parseInt($('#age').val());
+    var ageInput = new _age.Age(age);
+    var result = ageInput.yearsLeftVenus();
+
+    $('.venus-death-result').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + result + "</p>");
+  });
+  $('#mars-death-avg').click(function (event) {
+    event.preventDefault();
+    var age = parseInt($('#age').val());
+    var ageInput = new _age.Age(age);
+    var result = ageInput.yearsLeftMars();
+
+    $('.mars-death-result').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + result + "</p>");
+  });
+  $('#jupiter-death-avg').click(function (event) {
+    event.preventDefault();
+    var age = parseInt($('#age').val());
+    var ageInput = new _age.Age(age);
+    var result = ageInput.yearsLeftJupiter();
+
+    $('.jupiter-death-result').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + result + "</p>");
+  });
+  $('.clear-mercury-age').click(function (event) {
+    event.preventDefault();
+    $('#mercury-age').html("");
+  });
+  $('.clear-mercury-death').click(function (event) {
+    event.preventDefault();
+    $('#mercury-death-result').html("");
   });
   $('#date-diff-form').submit(function (event) {
     event.preventDefault();

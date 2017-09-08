@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="build/css/vendor.css">
     <script src="build/js/vendor.min.js"></script>
+    <link href="css/styles.css" rel="text/css">
     <script type="text/javascript" src="build/js/app.js"></script>
     <title>Super Galactic Age Calculator</title>
   </head>
@@ -32,10 +33,19 @@
       <div class="col-md-3">
         <h3>Mercury Years</h3>
         <div id="mercury-age"></div>
+        <div class="show-clear-mercury-age">
+          <button type="button" class="btn btn-xs btn-danger clear-mercury-age">Clear</button>
+        </div>
         <br>
-        <p class="avg-death-text">How many years do you have left in Mercury years
-          <br>*Based on the average death age on Earth: 79</p>
-        <button id="mercury-death-avg" type="button" class="btn btn-xs btn-default btn-avg-death">Death prediction</button>
+        <div class="show-death-button">
+          <p class="avg-death-text">How many years do you have left in Mercury years
+            <br>*Based on the average death age on Earth: 79</p>
+          <button id="mercury-death-avg" type="button" class="btn btn-xs btn-default btn-avg-death">Death prediction</button>
+        </div>
+        <div class="show-death-results-mercury">
+          <div class="mercury-death-result"></div>
+          <button type="button" class="btn btn-xs btn-danger clear-mercury-death">Clear</button>
+        </div>
       </div>
       <div class="col-md-3">
         <h3>Venus Years</h3>
@@ -44,6 +54,9 @@
         <p class="avg-death-text">How many years do you have left in Venus years
           <br>*Based on the average death age on Earth: 79</p>
         <button id="venus-death-avg" type="button" class="btn btn-xs btn-default btn-avg-death">Death prediction</button>
+        <div class="venus-death-result"></div>
+
+
       </div>
       <div class="col-md-3">
         <h3>Mars Years</h3>
@@ -52,6 +65,7 @@
         <p class="avg-death-text">How many years do you have left in Mars years
           <br>*Based on the average death age on Earth: 79</p>
         <button id="mars-death-avg" type="button" class="btn btn-xs btn-default btn-avg-death">Death prediction</button>
+        <div class="mars-death-result"></div>
       </div>
       <div class="col-md-3">
         <h3>Jupiter Years</h3>
@@ -60,6 +74,7 @@
         <p class="avg-death-text">How many years do you have left in Jupiter years
           <br>*Based on the average death age on Earth: 79</p>
         <button id="jupiter-death-avg" type="button" class="btn btn-xs btn-default btn-avg-death">Death prediction</button>
+        <div class="jupiter-death-result"></div>
       </div>
     </div>
 

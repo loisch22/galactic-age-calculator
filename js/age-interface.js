@@ -17,6 +17,8 @@ $(function() {
     let mercuryAge = ageInput.mercury();
 
     $('#mercury-age').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" +  "<strong>" + " Mercury years: " + "</strong>" + mercuryAge + "</p>");
+    $('.show-clear-mercury-age').show();
+    $('.show-death-button').show();
   });
   $('#venus').click(function(event) {
     event.preventDefault();
@@ -41,6 +43,47 @@ $(function() {
     let jupiterAge = ageInput.jupiter();
 
     $('#jupiter-age').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" +  "<strong>" + " Jupiter years: " + "</strong>" + jupiterAge + "</p>");
+  });
+  $('#mercury-death-avg').click(function(event) {
+    event.preventDefault();
+    let age = parseInt($('#age').val());
+    let ageInput = new Age(age);
+    let result = ageInput.yearsLeftMercury();
+
+    $('.mercury-death-result').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + result + "</p>");
+    $('.show-death-results-mercury').show();
+  });
+  $('#venus-death-avg').click(function(event) {
+    event.preventDefault();
+    let age = parseInt($('#age').val());
+    let ageInput = new Age(age);
+    let result = ageInput.yearsLeftVenus();
+
+    $('.venus-death-result').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + result + "</p>");
+  });
+  $('#mars-death-avg').click(function(event) {
+    event.preventDefault();
+    let age = parseInt($('#age').val());
+    let ageInput = new Age(age);
+    let result = ageInput.yearsLeftMars();
+
+    $('.mars-death-result').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + result + "</p>");
+  });
+  $('#jupiter-death-avg').click(function(event) {
+    event.preventDefault();
+    let age = parseInt($('#age').val());
+    let ageInput = new Age(age);
+    let result = ageInput.yearsLeftJupiter();
+
+    $('.jupiter-death-result').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + result + "</p>");
+  });
+  $('.clear-mercury-age').click(function(event) {
+    event.preventDefault();
+    $('#mercury-age').html("");
+  });
+  $('.clear-mercury-death').click(function(event) {
+    event.preventDefault();
+    $('#mercury-death-result').html("");
   });
   $('#date-diff-form').submit(function(event) {
     event.preventDefault();
