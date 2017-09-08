@@ -9,85 +9,101 @@
     <title>Super Galactic Age Calculator</title>
   </head>
   <body>
-    <h1>Super Galactic Age Calculator</h1>
-
-    <h2>Convert your age to:</h2>
-    <form class="form-group">
-      <label for="age">Age:</label>
-      <input type="number" id="age">
-      <br>
-      <button id="seconds" type="button" class="btn btn-default seconds-btn">Seconds</button>
-      <button id="mercury" type="button" class="btn btn-default mercury-btn">Mercury Years</button>
-      <button id="venus" type="submit" class="btn btn-default venus-btn">Venus Years</button>
-      <button id="mars" type="submit" class="btn btn-default mars-btn">Mars Years</button>
-      <button id="jupiter" setype="submit" class="btn btn-default jupiter-btn">Jupiter Years</button>
-    </form>
-
-    <div class="seconds">
-      <h3>Age in Seconds</h3>
-      <!-- <button type="button" class="btn btn-xs btn-danger">Clear</button> -->
-      <div id="seconds-result"></div>
-      <button type="button" class="btn btn-xs btn-danger clear-seconds">Clear</button>
+    <h1 class="header">Super Galactic Age Calculator</h1>
+    <div class="well age-convert">
+      <h2 class="form-header">Convert your age to:</h2>
+      <form class="form-group">
+        <label class="label-age" for="age">Enter age:</label>
+        <input type="number" id="age">
+        <br>
+        <button id="seconds" type="button" class="btn btn-default seconds-btn">Seconds</button>
+        <button id="mercury" type="button" class="btn btn-default mercury-btn">Mercury Years</button>
+        <button id="venus" type="submit" class="btn btn-default venus-btn">Venus Years</button>
+        <button id="mars" type="submit" class="btn btn-default mars-btn">Mars Years</button>
+        <button id="jupiter" setype="submit" class="btn btn-default jupiter-btn">Jupiter Years</button>
+      </form>
     </div>
 
-    <div class="row">
-      <div class="col-md-3">
-        <h3>Mercury Years</h3>
-        <div id="mercury-age"></div>
-        <br>
-        <p class="avg-death-text">How many years do you have left in Mercury years
-          <br>*Based on the average death age on Earth: 79</p>
-        <button id="mercury-death-avg" type="button" class="btn btn-xs btn-default btn-avg-death">Death prediction</button>
-        <div id="mercury-death-result"></div>
-        <button type="button" class="btn btn-xs btn-danger clear-mercury">Clear</button>
+    <div class="container">
+      <div class="seconds">
+        <h3 class="result-header">Age in Seconds</h3>
+        <div class="clear-btn">
+          <button type="button" class="btn btn-xs btn-danger clear-seconds">Clear</button>
+        </div>
+        <div id="seconds-result"></div>
       </div>
-      <div class="col-md-3">
-        <h3>Venus Years</h3>
-        <div id="venus-age"></div>
-        <br>
-        <p class="avg-death-text">How many years do you have left in Venus years
-          <br>*Based on the average death age on Earth: 79</p>
-        <button id="venus-death-avg" type="button" class="btn btn-xs btn-default btn-avg-death">Death prediction</button>
-        <div id="venus-death-result"></div>
-        <button type="button" class="btn btn-xs btn-danger clear-venus">Clear</button>
-      </div>
-      <div class="col-md-3">
-        <h3>Mars Years</h3>
-        <div id="mars-age"></div>
-        <br>
-        <p class="avg-death-text">How many years do you have left in Mars years
-          <br>*Based on the average death age on Earth: 79</p>
-        <button id="mars-death-avg" type="button" class="btn btn-xs btn-default btn-avg-death">Death prediction</button>
-        <div id="mars-death-result"></div>
-        <button type="button" class="btn btn-xs btn-danger clear-mars">Clear</button>
-      </div>
-      <div class="col-md-3">
-        <h3>Jupiter Years</h3>
-        <div id="jupiter-age"></div>
-        <br>
-        <p class="avg-death-text">How many years do you have left in Jupiter years
-          <br>*Based on the average death age on Earth: 79</p>
-        <button id="jupiter-death-avg" type="button" class="btn btn-xs btn-default btn-avg-death">Death prediction</button>
-        <div id="jupiter-death-result"></div>
-        <button type="button" class="btn btn-xs btn-danger clear-jupiter">Clear</button>
+
+      <div class="row">
+        <div class="col-md-3">
+          <h3 class="result-header">Mercury Years</h3>
+          <div class="clear-planets">
+            <button type="button" class="btn btn-xs btn-danger clear-mercury">Clear</button>
+          </div>
+          <div id="mercury-age"></div>
+          <br>
+          <p class="avg-death-text">How many years do you have left in Mercury years
+            <br>*Based on the average death age on Earth: 79</p>
+          <button id="mercury-death-avg" type="button" class="btn btn-xs btn-default btn-avg-death">Death prediction</button>
+          <div id="mercury-death-result"></div>
+        </div>
+        <div class="col-md-3">
+          <h3 class="result-header">Venus Years</h3>
+          <div class="clear-planets">
+            <button type="button" class="btn btn-xs btn-danger clear-venus">Clear</button>
+          </div>
+          <div id="venus-age"></div>
+          <br>
+          <p class="avg-death-text">How many years do you have left in Venus years
+            <br>*Based on the average death age on Earth: 79</p>
+          <button id="venus-death-avg" type="button" class="btn btn-xs btn-default btn-avg-death">Death prediction</button>
+          <div id="venus-death-result"></div>
+        </div>
+        <div class="col-md-3">
+          <h3 class="result-header">Mars Years</h3>
+          <div class="clear-planets">
+            <button type="button" class="btn btn-xs btn-danger clear-mars">Clear</button>
+          </div>
+          <div id="mars-age"></div>
+          <br>
+          <p class="avg-death-text">How many years do you have left in Mars years
+            <br>*Based on the average death age on Earth: 79</p>
+          <button id="mars-death-avg" type="button" class="btn btn-xs btn-default btn-avg-death">Death prediction</button>
+          <div id="mars-death-result"></div>
+        </div>
+        <div class="col-md-3">
+          <h3 class="result-header">Jupiter Years</h3>
+          <div class="clear-planets">
+            <button type="button" class="btn btn-xs btn-danger clear-jupiter">Clear</button>
+          </div>
+          <div id="jupiter-age"></div>
+          <br>
+          <p class="avg-death-text">How many years do you have left in Jupiter years
+            <br>*Based on the average death age on Earth: 79</p>
+          <button id="jupiter-death-avg" type="button" class="btn btn-xs btn-default btn-avg-death">Death prediction</button>
+          <div id="jupiter-death-result"></div>
+        </div>
       </div>
     </div>
 
-    <h2>Get the difference between two dates in seconds</h2>
-    <form id="date-diff-form" class="form-group">
-      <label for="date1">First date:</label>
-      <input type="date" id="date1">
-      <label for="date2">Second date:</label>
-      <input type="date" id="date2">
-      <button type="submit" class="btn btn-default date-btn">Get Difference</button>
-    </form>
-
-    <div class="seconds">
-      <h3>Difference between your two dates in seconds</h3>
-      <!-- <button type="button" class="btn btn-xs btn-danger">Clear</button> -->
-      <div id="date-diff-result"></div>
-      <button type="button" class="btn btn-xs btn-danger clear-date">Clear</button>
+    <div class="well date-seconds">
+      <h2 class="form-header">Get the difference between two dates in seconds</h2>
+      <form id="date-diff-form" class="form-group">
+        <label class="label-date" for="date1">First date:</label>
+        <input type="date" id="date1">
+        <label class="label-date" for="date2">Second date:</label>
+        <input type="date" id="date2">
+        <button type="submit" class="btn btn-default date-btn date-btn">Get Difference</button>
+      </form>
     </div>
 
+    <div class="container">
+      <div class="seconds">
+        <h3 class="result-header">Difference between your two dates in seconds</h3>
+        <div class="clear-btn">
+          <button type="button" class="btn btn-xs btn-danger clear-date">Clear</button>
+        </div>
+        <div id="date-diff-result"></div>
+      </div>
+    </div>
   </body>
 </html>

@@ -2,5 +2,40 @@
   display: none;
 }
 body {
-  background: blue;
+  background-image: url('img/galaxy.jpg');
+}
+.header {
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 10%;
+}
+.age-convert, .date-seconds {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.form-header {
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+.label-age, #age, .label-date, #date1, #date2 {
+  margin-bottom: 30px;
+  margin-right: 5px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding: 5px;
+}
+.result-header {
+  letter-spacing: 2px;
+}
+.result-header:first-of-type {
+  text-align: center;
+}
+.clear-btn, .clear-planets {
+  text-align: center;
+
+}
+.clear-mercury, .clear-venus, .clear-mars, .clear-jupiter, .clear-seconds, .clear-date {
+  font-size: 14px;
+  letter-spacing: 1px;
 }
