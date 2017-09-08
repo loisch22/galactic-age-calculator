@@ -6,7 +6,7 @@
 
 ## Description
 
-_This application will calculate a users age based on seconds, Mercury years (.24 Earth years), Venus years (.62 Earth years), Mars years (1.88 Earth years), and Jupiter (11.86 Earth years). It will also allow users to enter two dates to receive the difference between the two in seconds. The application will also determine the users life expectancy on each planet. If a user has already surpassed the average life expectancy, the application will let the user know. This application was calculated on the basis of 365 days a year, the average human life expectancy 79, and will calculate with numbers rounded to the nearest whole number._
+_This application will calculate a users age based on seconds, Mercury years (.24 Earth years), Venus years (.62 Earth years), Mars years (1.88 Earth years), and Jupiter (11.86 Earth years). It will also allow users to enter two dates to receive the difference between the two in seconds. The application will also determine the users life expectancy on each planet. If a user has already surpassed the average life expectancy, the application will let the user know. This application was calculated on the basis of 365 days a year, does not factor in the different number of days in each month (but sets the days to 31), the average human life expectancy 79, and will calculate with numbers rounded to the nearest whole number._
 
 
 ## User Story Specifications (BDD)
@@ -24,6 +24,7 @@ _This application will calculate a users age based on seconds, Mercury years (.2
 
 ## Exentensions/Wish list
 
+_I would want to work on making this application more accurate, meaning I would want it to consider how many days each month has and incorporate that into the calculation._
 _Have users enter which country they are from to get the average age for that country. Then give a more "accurate" prediction on their life expectancy on different planets._
 
 ## Known Bugs
