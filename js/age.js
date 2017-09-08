@@ -2,9 +2,7 @@ export class Age {
   constructor(age) {
     this.age = age;
   }
-  // const yearSec = 31536000;
-  // const monthSec = 2678400;
-  // const daySec = 86400;
+  
   seconds() {
     const yearSec = 31536000;
 

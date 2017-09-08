@@ -10,14 +10,52 @@
   <body>
     <h1>Super Galactic Age Calculator</h1>
 
-    <h2>Convert your age to seconds:</h2>
-    <form id="seconds-form" class="form-group">
-      <label for="age">Age:</label>
-      <input type="number" id="age">
-      <button type="submit" class="btn btn-default">Get Seconds</button>
-    </form>
+    <div class="container">
+      <h2>Convert your age to:</h2>
+      <form class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age">
+        <br>
+        <button id="seconds" type="button" class="btn btn-default seconds-btn">Seconds</button>
+        <button id="mercury" type="button" class="btn btn-default mercury-btn">Mercury Years</button>
+        <button id="venus" type="submit" class="btn btn-default venus-btn">Venus Years</button>
+        <button id="mars" type="submit" class="btn btn-default mars-btn">Mars Years</button>
+        <button id="jupiter" setype="submit" class="btn btn-default jupiter-btn">Jupiter Years</button>
+      </form>
 
-    <h2>Enter 2 dates to get the difference between in the two in seconds:</h2>
+      <div class="seconds">
+        <h3>Age in Seconds</h3>
+        <button type="button" class="btn btn-xs btn-danger">Clear</button>
+        <div id="seconds-result"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <h3>Mercury Years</h3>
+          <div id="mercury-age"></div>
+        </div>
+        <div class="col-md-3">
+          <h3>Venus Years</h3>
+          <div id="venus-age"></div>
+        </div>
+        <div class="col-md-3">
+          <h3>Mars Years</h3>
+          <div id="mars-age"></div>
+        </div>
+        <div class="col-md-3">
+          <h3>Jupiter Years</h3>
+          <div id="jupiter-age"></div>
+        </div>
+      </div>
+
+
+
+
+
+
+  </div>
+
+    <!-- <h2>Enter 2 dates to find how many seconds are between each date:</h2>
     <form id="dates-compare-form" class="form-group">
       <label for="date1">First Date:</label>
       <input type="date" id="date1">
@@ -34,17 +72,13 @@
       <button id="venus" type="button" class="btn btn-default">Venus age</button>
       <button id="mars" type="button" class="btn btn-default">Mars age</button>
       <button id="jupiter" type="button" class="btn btn-default">Jupiter age</button>
-    </form>
+    </form> -->
 
-    <div class="seconds">
-      <h3>Age in Seconds</h3>
-      <p id="seconds-result"></p>
-    </div>
 
-    <div class="date-compare">
+    <!-- <div class="date-compare">
       <h3>Age in Seconds</h3>
       <p id="date-compare"></p>
-    </div>
+    </div> -->
 
 
   </body>
