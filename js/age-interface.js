@@ -17,8 +17,6 @@ $(function() {
     let mercuryAge = ageInput.mercury();
 
     $('#mercury-age').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" +  "<strong>" + " Mercury years: " + "</strong>" + mercuryAge + "</p>");
-    $('.show-clear-mercury-age').show();
-    $('.show-death-button').show();
   });
   $('#venus').click(function(event) {
     event.preventDefault();
@@ -50,8 +48,7 @@ $(function() {
     let ageInput = new Age(age);
     let result = ageInput.yearsLeftMercury();
 
-    $('.mercury-death-result').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + result + "</p>");
-    $('.show-death-results-mercury').show();
+    $('#mercury-death-result').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + result + "</p>");
   });
   $('#venus-death-avg').click(function(event) {
     event.preventDefault();
@@ -59,7 +56,7 @@ $(function() {
     let ageInput = new Age(age);
     let result = ageInput.yearsLeftVenus();
 
-    $('.venus-death-result').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + result + "</p>");
+    $('#venus-death-result').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + result + "</p>");
   });
   $('#mars-death-avg').click(function(event) {
     event.preventDefault();
@@ -67,7 +64,7 @@ $(function() {
     let ageInput = new Age(age);
     let result = ageInput.yearsLeftMars();
 
-    $('.mars-death-result').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + result + "</p>");
+    $('#mars-death-result').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + result + "</p>");
   });
   $('#jupiter-death-avg').click(function(event) {
     event.preventDefault();
@@ -75,24 +72,43 @@ $(function() {
     let ageInput = new Age(age);
     let result = ageInput.yearsLeftJupiter();
 
-    $('.jupiter-death-result').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + result + "</p>");
+    $('#jupiter-death-result').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + result + "</p>");
   });
-  $('.clear-mercury-age').click(function(event) {
+  $('.clear-seconds').click(function(event) {
+    event.preventDefault();
+    $('#seconds-result').html("");
+  });
+  $('.clear-mercury').click(function(event) {
     event.preventDefault();
     $('#mercury-age').html("");
-  });
-  $('.clear-mercury-death').click(function(event) {
-    event.preventDefault();
     $('#mercury-death-result').html("");
+  });
+  $('.clear-venus').click(function(event) {
+    event.preventDefault();
+    $('#venus-age').html("");
+    $('#venus-death-result').html("");
+  });
+  $('.clear-mars').click(function(event) {
+    event.preventDefault();
+    $('#mars-age').html("");
+    $('#mars-death-result').html("");
+  });
+  $('.clear-jupiter').click(function(event) {
+    event.preventDefault();
+    $('#jupiter-age').html("");
+    $('#jupiter-death-result').html("");
+  });
+  $('.clear-date').click(function(event) {
+    event.preventDefault();
+    $('#date-diff-result').html("");
   });
   $('#date-diff-form').submit(function(event) {
     event.preventDefault();
     let date1 = $('#date1').val();
-    console.log(date1);
     let date2 = $('#date2').val();
-    let dateComp = new DateDiff(date1, date2);
-    let dateSec = dateComp.dateSeconds();
+    let newDate = new DateDiff(date1, date2);
+    let dateSeconds = newDate.dateSeconds();
 
-    $('#date-diff-result').append("<p>" + "<strong>" + "Date 1 input: " + "</strong>" + date1 + "<br>" +  "<strong>" + "Date 2 input: " + "</strong>" + date2 + "<br>" + "<strong>" + " Difference in seconds: " + "</strong>" + dateSec + "</p>");
+    $('#date-diff-result').append("<p>" + "<strong>" + "Date 1: " + "</strong>" + date1 + "<br>" + "<strong>" + "Date 2: " + "</strong>" + date2 + "<br>" + "<strong>" + "Difference in seconds: " + "</strong>" + dateSeconds);
   });
 });
