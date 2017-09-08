@@ -14,7 +14,7 @@ _This application will calculate a users age based on seconds, Mercury years (.2
 | Behavior | Input | Output |
 | :---         |     :---:      |          ---: |
 | 1. User enters a their age and receives their age in seconds | 1 | 31536000|
-| 2. User enters two dates and receives the difference between them | March 10, 2017 & March 15, 2018 | 314,449,600|
+| 2. User enters two dates and receives the difference between them in seconds | March 10, 2017 & March 15, 2018 | 314,449,600|
 | 3. User enters age and receives Mercury years | 1 | 88 (actual 87.6) |
 | 4. User enters age and receives Venus years | 1 | 226 (actual 226.3) |
 | 5. User enters age and receives Mars years | 1 | 686 (actual 686.2) |

@@ -1,4 +1,3 @@
-import {Planets} from './../js/planets.js';
 import {Age} from './../js/age.js';
 import {DateDiff} from './../js/date_difference.js';
 
@@ -9,9 +8,116 @@ describe('Age to seconds calculator test methods', function() {
 
     expect(age.seconds()).toEqual(31536000);
   });
-})
 
-;
+  it('should return Mercury age in years', function() {
+    let age = new Age(1);
+
+    expect(age.mercury()).toEqual(88);
+  });
+
+  it('should return Mercury age in years', function() {
+    let age = new Age(5);
+
+    expect(age.mercury()).toEqual(440);
+  });
+
+  it('should return Venus age in years', function() {
+    let age = new Age(1);
+
+    expect(age.venus()).toEqual(226);
+  });
+
+  it('should return Venus age in years', function() {
+    let age = new Age(5);
+
+    expect(age.venus()).toEqual(1130);
+  });
+
+  it('should return Mars age in years', function() {
+    let age = new Age(1);
+
+    expect(age.mars()).toEqual(686);
+  });
+
+  it('should return Mars age in years', function() {
+    let age = new Age(5);
+
+    expect(age.mars()).toEqual(3430);
+  });
+
+  it('should return Jupiter age in years', function() {
+    let age = new Age(1);
+
+    expect(age.jupiter()).toEqual(4329);
+  });
+
+  it('should return Jupiter age in years', function() {
+    let age = new Age(5);
+
+    expect(age.jupiter()).toEqual(21645);
+  });
+
+  it('should return how many years above the average life expectancy in Mercury years', function() {
+    let age = new Age(80);
+
+    expect(age.yearsLeftMercury()).toEqual(88);
+  });
+
+  it('should return how many years above the average life expectancy in Mercury years', function() {
+    let age = new Age(82);
+
+    expect(age.yearsLeftMercury()).toEqual(264);
+  });
+
+  it('should return how many years before the average life expectancy in Mercury years', function() {
+    let age = new Age(78);
+
+    expect(age.yearsLeftMercury()).toEqual(88);
+  });
+
+  it('should return how many years before the average life expectancy in Mercury years', function() {
+    let age = new Age(76);
+
+    expect(age.yearsLeftMercury()).toEqual(264);
+  });
+
+  it('should return how many years above the average life expectancy in Venus years', function() {
+    let age = new Age(80);
+
+    expect(age.yearsLeftVenus()).toEqual(226);
+  });
+
+  it('should return how many years below the average life expectancy in Venus years', function() {
+    let age = new Age(78);
+
+    expect(age.yearsLeftVenus()).toEqual(226);
+  });
+
+  it('should return how many years above the average life expectancy in Mars years', function() {
+    let age = new Age(80);
+
+    expect(age.yearsLeftMars()).toEqual(686);
+  });
+
+  it('should return how many years below the average life expectancy in Mars years', function() {
+    let age = new Age(78);
+
+    expect(age.yearsLeftMars()).toEqual(686);
+  });
+
+  it('should return how many years above the average life expectancy in Jupiter years', function() {
+    let age = new Age(80);
+
+    expect(age.yearsLeftJupiter()).toEqual(4329);
+  });
+
+  it('should return how many years below the average life expectancy in Jupiter years', function() {
+    let age = new Age(78);
+
+    expect(age.yearsLeftJupiter()).toEqual(4329);
+  });
+
+});
 
 describe('Date difference in seconds test methods', function() {
 
