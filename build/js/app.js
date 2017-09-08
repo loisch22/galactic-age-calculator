@@ -251,6 +251,16 @@ $(function () {
 
     $('#jupiter-age').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + "<strong>" + " Jupiter years: " + "</strong>" + jupiterAge + "</p>");
   });
+  $('#date-diff-form').submit(function (event) {
+    event.preventDefault();
+    var date1 = $('#date1').val();
+    console.log(date1);
+    var date2 = $('#date2').val();
+    var dateComp = new _date_difference.DateDiff(date1, date2);
+    var dateSec = dateComp.dateSeconds();
+
+    $('#date-diff-result').append("<p>" + "<strong>" + "Date 1 input: " + "</strong>" + date1 + "<br>" + "<strong>" + "Date 2 input: " + "</strong>" + date2 + "<br>" + "<strong>" + " Difference in seconds: " + "</strong>" + dateSec + "</p>");
+  });
 });
 
 },{"./../js/age.js":1,"./../js/date_difference.js":2}]},{},[3]);

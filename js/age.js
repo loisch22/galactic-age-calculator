@@ -2,7 +2,7 @@ export class Age {
   constructor(age) {
     this.age = age;
   }
-  
+
   seconds() {
     const yearSec = 31536000;
 
@@ -46,10 +46,10 @@ export class Age {
 
     if (mercuryAge >= avgDeathAge) {
       let yearsAbove = mercuryAge - avgDeathAge;
-      return yearsAbove;
+      return ("You lived beyond the average age by: " + yearsAbove + " years");
     } else {
       let yearsBelow = avgDeathAge - mercuryAge;
-      return yearsBelow;
+      return ("Years you have left: " + yearsBelow);
     }
   }
 
@@ -61,10 +61,10 @@ export class Age {
 
     if (venusAge >= avgDeathAge) {
       let yearsAbove = venusAge - avgDeathAge;
-      return yearsAbove;
+      return ("You lived beyond the average age by: " + yearsAbove + " years");
     } else {
       let yearsBelow = avgDeathAge - venusAge;
-      return yearsBelow;
+      return ("Years you have left: " + yearsBelow);
     }
   }
 
@@ -76,10 +76,10 @@ export class Age {
 
     if (marsAge >= avgDeathAge) {
       let yearsAbove = marsAge - avgDeathAge;
-      return yearsAbove;
+      return ("You lived beyond the average age by: " + yearsAbove + " years");
     } else {
       let yearsBelow = avgDeathAge - marsAge;
-      return yearsBelow;
+      return ("Years you have left: " + yearsBelow);
     }
   }
 
@@ -91,10 +91,10 @@ export class Age {
 
     if (jupiterAge >= avgDeathAge) {
       let yearsAbove = jupiterAge - avgDeathAge;
-      return yearsAbove;
+      return ("You lived beyond the average age by: " + yearsAbove + " years");
     } else {
       let yearsBelow = avgDeathAge - jupiterAge;
-      return yearsBelow;
+      return ("Years you have left: " + yearsBelow);
     }
   }
 

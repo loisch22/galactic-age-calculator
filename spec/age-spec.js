@@ -60,61 +60,61 @@ describe('Age to seconds calculator test methods', function() {
   it('should return how many years above the average life expectancy in Mercury years', function() {
     let age = new Age(80);
 
-    expect(age.yearsLeftMercury()).toEqual(88);
+    expect(age.yearsLeftMercury()).toEqual("You lived beyond the average age by: 88 years");
   });
 
   it('should return how many years above the average life expectancy in Mercury years', function() {
     let age = new Age(82);
 
-    expect(age.yearsLeftMercury()).toEqual(264);
+    expect(age.yearsLeftMercury()).toEqual("You lived beyond the average age by: 264 years");
   });
 
   it('should return how many years before the average life expectancy in Mercury years', function() {
     let age = new Age(78);
 
-    expect(age.yearsLeftMercury()).toEqual(88);
+    expect(age.yearsLeftMercury()).toEqual("Years you have left: 88");
   });
 
   it('should return how many years before the average life expectancy in Mercury years', function() {
     let age = new Age(76);
 
-    expect(age.yearsLeftMercury()).toEqual(264);
+    expect(age.yearsLeftMercury()).toEqual("Years you have left: 264");
   });
 
   it('should return how many years above the average life expectancy in Venus years', function() {
     let age = new Age(80);
 
-    expect(age.yearsLeftVenus()).toEqual(226);
+    expect(age.yearsLeftVenus()).toEqual("You lived beyond the average age by: 226 years");
   });
 
   it('should return how many years below the average life expectancy in Venus years', function() {
     let age = new Age(78);
 
-    expect(age.yearsLeftVenus()).toEqual(226);
+    expect(age.yearsLeftVenus()).toEqual("Years you have left: 226");
   });
 
   it('should return how many years above the average life expectancy in Mars years', function() {
     let age = new Age(80);
 
-    expect(age.yearsLeftMars()).toEqual(686);
+    expect(age.yearsLeftMars()).toEqual("You lived beyond the average age by: 686 years");
   });
 
   it('should return how many years below the average life expectancy in Mars years', function() {
     let age = new Age(78);
 
-    expect(age.yearsLeftMars()).toEqual(686);
+    expect(age.yearsLeftMars()).toEqual("Years you have left: 686");
   });
 
   it('should return how many years above the average life expectancy in Jupiter years', function() {
     let age = new Age(80);
 
-    expect(age.yearsLeftJupiter()).toEqual(4329);
+    expect(age.yearsLeftJupiter()).toEqual("You lived beyond the average age by: 4329 years");
   });
 
   it('should return how many years below the average life expectancy in Jupiter years', function() {
     let age = new Age(78);
 
-    expect(age.yearsLeftJupiter()).toEqual(4329);
+    expect(age.yearsLeftJupiter()).toEqual("Years you have left: 4329");
   });
 
 });
