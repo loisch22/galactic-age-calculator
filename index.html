@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <script src="build/js/vendor.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
+    <title>Super Galactic Age Calculator</title>
+  </head>
+  <body>
+    <h1>Super Galactic Age Calculator</h1>
+
+    <h2>Convert your age to seconds:</h2>
+    <form id="seconds-form" class="form-group">
+      <label for="age">Age:</label>
+      <input type="number" id="age">
+      <button type="submit" class="btn btn-default">Get Seconds</button>
+    </form>
+
+    <h2>Enter 2 dates to get the difference between in the two in seconds:</h2>
+    <form id="dates-compare-form" class="form-group">
+      <label for="date1">First Date:</label>
+      <input type="date" id="date1">
+      <label for="date2">Second Date:</label>
+      <input type="date" id="date2">
+      <button type="submit" class="btn btn-default">Get Difference in Seconds</button>
+    </form>
+
+    <h2>Enter age to calculate age according to planets:</h2>
+    <form id="dates-compare-form" class="form-group">
+      <label for="age-planet">Age:</label>
+      <input type="number" id="age-planet">
+      <button id="mercury" type="button" class="btn btn-default">Mercury age</button>
+      <button id="venus" type="button" class="btn btn-default">Venus age</button>
+      <button id="mars" type="button" class="btn btn-default">Mars age</button>
+      <button id="jupiter" type="button" class="btn btn-default">Jupiter age</button>
+    </form>
+
+    <div class="seconds">
+      <h3>Age in Seconds</h3>
+      <p id="seconds-result"></p>
+    </div>
+
+    <div class="date-compare">
+      <h3>Age in Seconds</h3>
+      <p id="date-compare"></p>
+    </div>
+
+
+  </body>
+</html>

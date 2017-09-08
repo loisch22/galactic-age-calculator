@@ -1,0 +1,22 @@
+{
+  "name": "age-calculator",
+  "description": "User can enter their age to receive their age in seconds. Users can also enter age to find out how they are on different planets",
+  "main": "gulpfile.js",
+  "authors": [
+    "Lois C."
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/loisch22/job-list",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "moment": "^2.18.1"
+  }
+}
