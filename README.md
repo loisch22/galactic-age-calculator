@@ -25,6 +25,7 @@ _This application will calculate a users age based on seconds, Mercury years (.2
 ## Exentensions/Wish list
 
 _I would want to work on making this application more accurate, meaning I would want it to consider how many days each month has and incorporate that into the calculation._
+
 _Have users enter which country they are from to get the average age for that country. Then give a more "accurate" prediction on their life expectancy on different planets._
 
 ## Known Bugs
@@ -34,7 +35,7 @@ _No known bugs_
 
 ## Technologies Used
 
-_C#, SQL, .NET_
+_JavaScript, Node, jQuery_
 
 ### License
 
