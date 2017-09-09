@@ -9,15 +9,22 @@ body {
 }
 .header {
   text-align: center;
-  letter-spacing: 5px;
+  letter-spacing: 15px;
   margin-top: 10%;
   margin-bottom: 10%;
-  color: #ffffff;
+  color:	#eeeeee;
+  font-size: 4.5em;
 }
 .age-convert, .date-seconds {
   text-align: center;
   margin-top: 5%;
   margin-bottom: 20%;
+  padding: 20px;
+  background: #000000;
+  opacity: .9;
+  border: #000000;
+  border-radius: 0;
+  color:	#eeeeee;
 }
 .form-header {
   margin-bottom: 30px;
@@ -29,6 +36,9 @@ body {
   font-size: 20px;
   letter-spacing: 2px;
   padding: 5px;
+}
+#age, #date1, #date2 {
+  color: #000000;
 }
 .result-header {
   letter-spacing: 2px;
@@ -45,4 +55,29 @@ body {
   letter-spacing: 1px;
   margin-top: 10px;
   margin-bottom: 30px;
+}
+#seconds-result {
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+#mercury-death-avg, #venus-death-avg, #mars-death-avg, #jupiter-death-avg {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  font-size: 12px;
+  padding: 4px 6px 4px 6px;
+}
+.years-left-calc {
+  border: solid 1px #eeeeee;
+  padding: 10px;
+}
+.avg-death-text {
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+.planet {
+  background: grey;
+  color: #ffffff;
+  padding: 3px;
+  margin: 3px;
 }

@@ -217,7 +217,7 @@ $(function () {
     var ageInput = new _age.Age(age);
     var seconds = ageInput.seconds();
 
-    $('#seconds-result').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + "<strong>" + " Age in seconds: " + "</strong>" + seconds + "</p>");
+    $('#seconds-result').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + "<strong>" + " Age in seconds: " + "</strong>" + seconds + "</p>" + "<hr>");
   });
   $('#mercury').click(function (event) {
     event.preventDefault();
@@ -225,7 +225,7 @@ $(function () {
     var ageInput = new _age.Age(age);
     var mercuryAge = ageInput.mercury();
 
-    $('#mercury-age').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + "<strong>" + " Mercury years: " + "</strong>" + mercuryAge + "</p>");
+    $('#mercury-age').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + "<strong>" + " Mercury years: " + "</strong>" + mercuryAge + "</p>" + "<hr>");
   });
   $('#venus').click(function (event) {
     event.preventDefault();
@@ -233,7 +233,7 @@ $(function () {
     var ageInput = new _age.Age(age);
     var venusAge = ageInput.venus();
 
-    $('#venus-age').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + "<strong>" + " Venus years: " + "</strong>" + venusAge + "</p>");
+    $('#venus-age').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + "<strong>" + " Venus years: " + "</strong>" + venusAge + "</p>" + "<hr>");
   });
   $('#mars').click(function (event) {
     event.preventDefault();
@@ -241,7 +241,7 @@ $(function () {
     var ageInput = new _age.Age(age);
     var marsAge = ageInput.mars();
 
-    $('#mars-age').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + "<strong>" + " Mars years: " + "</strong>" + marsAge + "</p>");
+    $('#mars-age').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + "<strong>" + " Mars years: " + "</strong>" + marsAge + "</p>" + "<hr>");
   });
   $('#jupiter').click(function (event) {
     event.preventDefault();
@@ -249,7 +249,7 @@ $(function () {
     var ageInput = new _age.Age(age);
     var jupiterAge = ageInput.jupiter();
 
-    $('#jupiter-age').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + "<strong>" + " Jupiter years: " + "</strong>" + jupiterAge + "</p>");
+    $('#jupiter-age').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + "<strong>" + " Jupiter years: " + "</strong>" + jupiterAge + "</p>" + "<hr>");
   });
   $('#mercury-death-avg').click(function (event) {
     event.preventDefault();
@@ -257,7 +257,7 @@ $(function () {
     var ageInput = new _age.Age(age);
     var result = ageInput.yearsLeftMercury();
 
-    $('#mercury-death-result').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + result + "</p>");
+    $('#mercury-death-result').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + result + "</p>" + "<hr>");
   });
   $('#venus-death-avg').click(function (event) {
     event.preventDefault();
@@ -265,7 +265,7 @@ $(function () {
     var ageInput = new _age.Age(age);
     var result = ageInput.yearsLeftVenus();
 
-    $('#venus-death-result').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + result + "</p>");
+    $('#venus-death-result').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + result + "</p>" + "<hr>");
   });
   $('#mars-death-avg').click(function (event) {
     event.preventDefault();
@@ -273,7 +273,7 @@ $(function () {
     var ageInput = new _age.Age(age);
     var result = ageInput.yearsLeftMars();
 
-    $('#mars-death-result').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + result + "</p>");
+    $('#mars-death-result').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + result + "</p>" + "<hr>");
   });
   $('#jupiter-death-avg').click(function (event) {
     event.preventDefault();
@@ -281,7 +281,7 @@ $(function () {
     var ageInput = new _age.Age(age);
     var result = ageInput.yearsLeftJupiter();
 
-    $('#jupiter-death-result').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + result + "</p>");
+    $('#jupiter-death-result').append("<p>" + "<strong>" + "Age input: " + "</strong>" + age + "<br>" + result + "</p>" + "<hr>");
   });
   $('.clear-seconds').click(function (event) {
     event.preventDefault();
@@ -318,7 +318,7 @@ $(function () {
     var newDate = new _date_difference.DateDiff(date1, date2);
     var dateSeconds = newDate.dateSeconds();
 
-    $('#date-diff-result').append("<p>" + "<strong>" + "Date 1: " + "</strong>" + date1 + "<br>" + "<strong>" + "Date 2: " + "</strong>" + date2 + "<br>" + "<strong>" + "Difference in seconds: " + "</strong>" + dateSeconds);
+    $('#date-diff-result').append("<p>" + "<strong>" + "Date 1: " + "</strong>" + date1 + "<br>" + "<strong>" + "Date 2: " + "</strong>" + date2 + "<br>" + "<strong>" + "Difference in seconds: " + "</strong>" + dateSeconds + "<hr>");
   });
 });
 
