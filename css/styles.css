@@ -2,17 +2,22 @@
   display: none;
 }
 body {
-  background-image: url('img/galaxy.jpg');
+  background-image: url('../img/galaxy.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .header {
   text-align: center;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
+  margin-top: 10%;
   margin-bottom: 10%;
+  color: #ffffff;
 }
 .age-convert, .date-seconds {
   text-align: center;
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 20%;
 }
 .form-header {
   margin-bottom: 30px;
@@ -38,4 +43,6 @@ body {
 .clear-mercury, .clear-venus, .clear-mars, .clear-jupiter, .clear-seconds, .clear-date {
   font-size: 14px;
   letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
