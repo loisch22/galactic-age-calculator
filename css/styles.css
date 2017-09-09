@@ -81,3 +81,7 @@ body {
   padding: 3px;
   margin: 3px;
 }
+.text {
+  font-size: 15px;
+  letter-spacing: 2px;
+}
