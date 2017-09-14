@@ -20,7 +20,7 @@ _This application will calculate a users age based on seconds, Mercury years (.2
 | 5. User enters age and receives Mars years | 1 | 686 (actual 686.2) |
 | 6. User enters age and receives Jupiter years | 1 | 4,329 (actual 4328.9) |
 | 7. User can find how many years left to live they have on each planet | if age is 78 | Mercury: 88 <br> Venus: 226 <br> Mars: 686 <br> Jupiter: 4329 |
-| 8. If user surpassed average life expectancy, application let's user know how many years above the life expectancy they already | 78 | "You have lived passed the expected life expectancy by:" <br> Mercury: 88 <br> Venus: 226 <br> Mars: 686 <br> Jupiter: 4329 |
+| 8. If user surpassed average life expectancy, application let's user know how many years above the life expectancy they already | 79 | "You have lived passed the expected life expectancy by:" <br> Mercury: 88 <br> Venus: 226 <br> Mars: 686 <br> Jupiter: 4329 |
 
 ## Exentensions/Wish list
 
